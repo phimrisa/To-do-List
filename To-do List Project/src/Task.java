@@ -34,7 +34,6 @@ public class Task extends JPanel{
 
         delete = new JButton("Delete");
         this.add(delete, BorderLayout.EAST);
-
     }
 
     public void changeIndex(int num) {
