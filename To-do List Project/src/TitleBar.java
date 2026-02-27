@@ -8,7 +8,6 @@ public class TitleBar extends JPanel{
     TitleBar()
     {
         this.setPreferredSize(new Dimension(400,80));
-
         JLabel titleText = new JLabel("To-do List");
         titleText.setPreferredSize(new Dimension(200,60));
         titleText.setFont(new Font("Sans-serif",Font.PLAIN, 20));
