@@ -10,7 +10,6 @@ public class AppFrame extends JFrame{
     private TitleBar title;
     private Footer footer;
     private List list;
-    private Task task;
 
     private JButton newTask;
     private JButton clear;
@@ -29,17 +28,18 @@ public class AppFrame extends JFrame{
         footer = new Footer();
         list = new List();
 
+
         this.add(title,BorderLayout.NORTH);
         this.add(footer,BorderLayout.SOUTH);
         this.add(list,BorderLayout.CENTER);
+
 
         newTask = footer.getNewTask();
         clear = footer.getClear();
 
         addListeners();
     }
-
-
+    
     public void addListeners()
     {
         newTask.addMouseListener(new MouseAdapter()
@@ -73,6 +73,17 @@ public class AppFrame extends JFrame{
                         repaint();
                     }
                 });
+            }
+        });
+
+        clear.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mousePressed(MouseEvent e)
+            {
+                list.removeCompletedTasks();
+                revalidate();
+                repaint();
             }
         });
     }
