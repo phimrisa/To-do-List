@@ -17,7 +17,6 @@ class List extends JPanel {
             if (c instanceof Task) {
                 if (((Task) c).getState()) {
                     remove(c);
-                    //updateNumbers();
                 }
             }
         }
