@@ -10,7 +10,8 @@ class List extends JPanel {
         this.setLayout(layout);
         this.setPreferredSize(new Dimension(400, 560));
     }
-    
+
+    /*
     public void updateNumbers() {
         Component[] listItems = this.getComponents();
 
@@ -20,6 +21,7 @@ class List extends JPanel {
             }
         }
     }
+    */
 
     public void removeCompletedTasks() {
 
@@ -27,7 +29,7 @@ class List extends JPanel {
             if (c instanceof Task) {
                 if (((Task) c).getState()) {
                     remove(c);
-                    updateNumbers();
+                    //updateNumbers();
                 }
             }
         }
