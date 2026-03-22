@@ -27,11 +27,9 @@ public class AppFrame extends JFrame{
         footer = new Footer();
         list = new List();
 
-
         this.add(title,BorderLayout.NORTH);
         this.add(footer,BorderLayout.SOUTH);
         this.add(list,BorderLayout.CENTER);
-
 
         newTask = footer.getNewTask();
         clear = footer.getClear();
