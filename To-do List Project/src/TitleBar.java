@@ -4,7 +4,7 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class TitleBar extends JPanel{
+public class TitleBar extends JPanel {
     TitleBar() {
         this.setPreferredSize(new Dimension(400,80)); // ขนาดพื้นที่ของ Title Bar
         JLabel titleText = new JLabel("To-do List"); // ข้อความของ Title Bar
