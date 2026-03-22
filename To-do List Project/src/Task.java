@@ -26,7 +26,6 @@ public class Task extends JPanel{
         checkBox.setFocusPainted(false);
         this.add(checkBox, BorderLayout.WEST);
 
-
         delete = new JButton("Delete");
         this.add(delete, BorderLayout.EAST);
     }
