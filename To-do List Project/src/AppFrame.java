@@ -13,7 +13,6 @@ public class AppFrame extends JFrame{
 
     private JButton newTask;
     private JButton clear;
-    private JButton delete;
 
     AppFrame()
     {
@@ -49,7 +48,7 @@ public class AppFrame extends JFrame{
             {
                 Task task = new Task();
                 list.add(task);
-                list.updateNumbers();
+                //list.updateNumbers();
 
                 task.getDone().addMouseListener(new MouseAdapter()
                 {
@@ -57,7 +56,7 @@ public class AppFrame extends JFrame{
                     public void mousePressed(MouseEvent e)
                     {
                         task.changeState();
-                        list.updateNumbers();
+                        //list.updateNumbers();
                         revalidate();
                     }
                 });
@@ -68,7 +67,7 @@ public class AppFrame extends JFrame{
                     public void mousePressed(MouseEvent e)
                     {
                         list.remove(task);
-                        list.updateNumbers();
+                        //list.updateNumbers();
                         revalidate();
                         repaint();
                     }
