@@ -23,7 +23,7 @@ public class Task extends JPanel{
         index.setHorizontalAlignment(JLabel.CENTER);
         this.add(index, BorderLayout.WEST);
 
-        taskName = new JTextField();// create task name text field
+        taskName = new JTextField();
         taskName.setFont(new Font("Sans-serif", Font.PLAIN, 15));
         this.add(taskName, BorderLayout.CENTER);
 
