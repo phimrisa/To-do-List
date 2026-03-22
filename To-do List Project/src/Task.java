@@ -2,7 +2,7 @@ import java.awt.*;
 
 import javax.swing.*;
 
-public class Task extends JPanel{
+public class Task extends JPanel {
     JLabel index;
     JTextField taskName;
     JCheckBox checkBox;
@@ -10,8 +10,7 @@ public class Task extends JPanel{
 
     private boolean checked;
 
-    Task()
-    {
+    Task() {
         this.setPreferredSize(new Dimension(200, 20)); // ขนาดพื้นที่ของช่อง Task
 
         this.setLayout(new BorderLayout()); // ตั้งค่า layout ของ Task
