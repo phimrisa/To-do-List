@@ -18,13 +18,6 @@ public class Task extends JPanel{
 
         checked = false;
 
-        /*
-        index = new JLabel("");
-        index.setPreferredSize(new Dimension(20, 20));
-        index.setHorizontalAlignment(JLabel.CENTER);
-        this.add(index, BorderLayout.WEST);
-        */
-
         taskName = new JTextField();
         taskName.setFont(new Font("Sans-serif", Font.PLAIN, 15));
         this.add(taskName, BorderLayout.CENTER);
@@ -38,20 +31,11 @@ public class Task extends JPanel{
         this.add(delete, BorderLayout.EAST);
     }
 
-    /*
-    public void changeIndex(int num) {
-        this.index.setText(num + "");
-        this.revalidate();
-    }
-    */
-
     public JCheckBox getDone() {
-
         return checkBox;
     }
 
     public boolean getState() {
-
         return checked;
     }
 
