@@ -11,18 +11,6 @@ class List extends JPanel {
         this.setPreferredSize(new Dimension(400, 560));
     }
 
-    /*
-    public void updateNumbers() {
-        Component[] listItems = this.getComponents();
-
-        for (int i = 0; i < listItems.length; i++) {
-            if (listItems[i] instanceof Task) {
-                ((Task) listItems[i]).changeIndex(i + 1);
-            }
-        }
-    }
-    */
-
     public void removeCompletedTasks() {
 
         for (Component c : getComponents()) {
