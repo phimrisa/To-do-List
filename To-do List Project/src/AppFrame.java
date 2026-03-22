@@ -48,7 +48,6 @@ public class AppFrame extends JFrame{
             {
                 Task task = new Task();
                 list.add(task);
-                //list.updateNumbers();
                 revalidate();
 
                 task.getDone().addMouseListener(new MouseAdapter()
@@ -57,7 +56,6 @@ public class AppFrame extends JFrame{
                     public void mousePressed(MouseEvent e)
                     {
                         task.changeState();
-                        //list.updateNumbers();
                         revalidate();
                     }
                 });
@@ -68,7 +66,6 @@ public class AppFrame extends JFrame{
                     public void mousePressed(MouseEvent e)
                     {
                         list.remove(task);
-                        //list.updateNumbers();
                         revalidate();
                         repaint();
                     }
